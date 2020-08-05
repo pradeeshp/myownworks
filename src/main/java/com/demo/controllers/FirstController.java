@@ -16,15 +16,13 @@ public class FirstController {
         return "quote";
     }
 
+    @RequestMapping(value = "/home")
+    public String getHome(Model model) {
+        return "home";
+    }
+
     @RequestMapping(value = "/createAccount")
     public String createAccount(@ModelAttribute("newaccount") Account account) {
-        System.out.println("Account{" +
-                "firstName='" + account.getFirstName() + '\'' +
-                ", lastName='" + account.getLastName() + '\'' +
-                ", address='" + account.getAddress() + '\'' +
-                ", email='" + account.getEmail() + '\'' +
-                "}");
-        //model.addAttribute("newaccount",account);
         return "createAccount";
     }
 
