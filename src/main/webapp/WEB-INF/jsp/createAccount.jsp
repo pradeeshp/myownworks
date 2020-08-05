@@ -13,7 +13,7 @@
 </head>
 <body>
 <form:form  modelAttribute="newaccount">
-    <form:input path="firstName" /> 
+    <form:input path="firstName" />  
     <form:input path="lastName"/>
     <form:input path="address"/>
     <form:input path="email"/>
